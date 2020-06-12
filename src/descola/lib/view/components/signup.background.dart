@@ -17,23 +17,19 @@ class LoginBackGround extends StatelessWidget {
       height: s.height,
       child: Stack(
         alignment: Alignment.center,
+
         children: <Widget>[
           Positioned(
             top: 0,
             left: 0,
+            
             child: Image.asset(
               "assets/images/LoginTop.png",
-              width: s.width ,
+              width: s.width + 1 ,
+             
             ),
           ),
-          Positioned(
-            bottom: 0,
-            right: 0,
-            child: Image.asset(
-              "assets/images/LoginTail.png",
-              width: s.width,
-            ),
-          ),
+         
           child,
         ],
       ),

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../colors.dart';
 
 class RoundPasswordInput extends StatelessWidget {
- final ValueChanged<String> onChanged;
+  final ValueChanged<String> onChanged;
   final String hintText;
 
   const RoundPasswordInput({

@@ -19,33 +19,59 @@ class _SignupViewState extends State<SignupView> {
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            
             children: [
-              Text(
-                "LOGIN",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold, 
-                    color: Colors.white,
-                    fontSize: 20,
+              SizedBox(height: 270),
+              Container(
+                decoration: BoxDecoration(
+                    color: Color(0xfffce4ec),
+                    border: Border.all(
+                      color: Colors.pink[100],
                     ),
+                    borderRadius: BorderRadius.circular(5)),
+                padding: EdgeInsets.all(20),
+                margin: EdgeInsets.all(15),
+                child: Column(
+                  children: [
+                    Text(
+                      "LOGIN",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.pink,
+                        fontSize: 20,
+                      ),
+                    ),
+                    SizedBox(height: 30),
+                    RoundTextInput(
+                      onChanged: (value) {},
+                      hintText: 'Email ou número de telefone',
+                    ),
+                    RoundPasswordInput(
+                      onChanged: (value) {},
+                      hintText: 'Senha',
+                    ),
+                    RoundButton(
+                      buttonColor: primary,
+                      onClick: () {},
+                      text: "ENTRAR",
+                    ),
+                    Row(
+                       mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        GestureDetector(
+                          onTap: () {},
+                          child: Text(
+                            "Esqueceu sua senha?",
+                            style: TextStyle(
+                              color: primary,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ),
-              SizedBox(
-                height: s.height * 0.24,
-              ),
-              RoundTextInput(
-                onChanged: (value) {},
-                hintText: 'Email ou número de telefone',
-              ),
-
-              RoundPasswordInput(
-                onChanged: (value) {},
-                hintText: 'Senha',
-              ),
-              RoundButton(
-                buttonColor: primary,
-                onClick: () {},
-                text: "LOGIN",
-              )
             ],
           ),
         ),
