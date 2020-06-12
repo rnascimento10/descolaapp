@@ -1,6 +1,6 @@
 # Descola (LOGIN PAGE UI) - Powered with Flutter
 
-A beautful app for learn some concepts from ux on Flutter.
+A beautiful app for learn some concepts from ux on Flutter.
 
 ### Desing by myself
 
