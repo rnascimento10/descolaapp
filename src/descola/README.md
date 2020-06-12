@@ -1,5 +1,5 @@
 # Descola
 
-A beatful app for learn some concepts from ux on Flutter
+A beautiful app for learn some concepts from ux on Flutter
 
 
